@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import HeaderComponent from './components/HeaderComponent.vue'
+import fotodeperfil from './assets/fotodeperfil.jpg'
 const myId = "coffe"
 let myCondition = false
 let condition2 = false
@@ -27,8 +28,34 @@ const movies = ["Lord of the Rings", "Star Wars", "Dune", "Batman"]
         <p>
           Mi nombre es Daniel Emmanuel Tun Alfaro, tengo 26 años y pertenezco a la carrera
           de Administración de Tecnologías de la Información cursando en
-          5to semestre y pienso enfocarme en el manejo de servidores.
+          5to semestre, durante este proceso he aprendido acerca de la administración de servidores,
+          el manejo de redes y diversos lenguajes de programación.
         </p>
+
+        <p>
+          Me considero una persona responsable, proactiva y con muchas ganas de aprender, me gusta
+          trabajar en equipo y siempre busco la manera de mejorar mis habilidades. Entre mis objetivos
+          se encuentra lograr adquirir experiencia así como nuevos conocimientos que puedan fortalecer
+          mi perfil profesional y me permitan desarrollarme en el ámbito laboral.
+        </p>
+      </div>
+
+   <div class="imagen">
+      <img
+        id="imagen-profesional"
+        class="imagen"
+        :src="fotodeperfil"
+        alt="Foto de perfil"
+      >
+    </div>
+
+      <div class="recorrido">
+        <h2>Recorrido académico</h2>
+        <ol id="lista-formacion" class="lista-ordenada">
+          <li><a id="prepa-link" href="https://www.prepa2.uady.mx/"> Preparatoria Dos UADY</a></li>
+          <li><a id="prepa-link" href="https://ingenieria.uady.mx"> Facultad de Ingeniería UADY</a></li>
+          <li><a id="prepa-link" href="https://contaduria.uady.mx"> Facultad de Contaduría y Administración UADY</a></li>
+        </ol>
       </div>
 
       <div class="materias">
@@ -75,6 +102,13 @@ const movies = ["Lord of the Rings", "Star Wars", "Dune", "Batman"]
   padding: 30px;
 }
 
+.imagen {
+  text-align: center;
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+}
+
 .title {
   margin: 10px;
 }
@@ -103,6 +137,18 @@ const movies = ["Lord of the Rings", "Star Wars", "Dune", "Batman"]
 
 .informacion h2 {
   color: #4b3f72;
+}
+
+.recorrido {
+  background-color: #e0f7fa;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.recorrido h2 {
+  color: #006064;
 }
 
 .materias {
